@@ -11,7 +11,9 @@ import Signin from './components/auth/signin';
 import Signout from './components/auth/signout';
 import reducers from './reducers';
 
-const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
+import loggerMiddleware from './middlewares/logger';
+
+const createStoreWithMiddleware = applyMiddleware(reduxThunk, loggerMiddleware)(createStore);
 const store = createStoreWithMiddleware(reducers);
 
 const token = localStorage.getItem('token');
@@ -26,10 +28,9 @@ const Feature = () => {
 
 ReactDOM.render(
   <Provider store={store}>
- 	<Router history={browserHistory}>
+ 	  <Router history={browserHistory}>
   		<Route path="/" component={App}>
   			<Route path="signin" component={Signin}/>
-  			<Route path="signout" component={Signout}/>
   			<Route path="feature" component={RequireAuth(Feature)}/>
   		</Route>
   	</Router>

@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import {reducer as form} from 'redux-form';
-import authReducer from './auth_reducer';
+import themeReducer from './theme_reducer';
 
 const rootReducer = combineReducers({
 	form,
-	auth: authReducer
+	theme: themeReducer
 });
 
 export default rootReducer;

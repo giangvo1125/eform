@@ -1,4 +1,4 @@
-import {AUTH_USER, UNAUTH_USER, AUTH_ERROR} from './types';
+/*import {AUTH_USER, UNAUTH_USER, AUTH_ERROR} from './types';
 import {browserHistory} from 'react-router';
 
 export function signinUser({email, password}){
@@ -26,4 +26,4 @@ export function signoutUser(){
 	return {
 		type: UNAUTH_USER
 	}
-}
+}*/
