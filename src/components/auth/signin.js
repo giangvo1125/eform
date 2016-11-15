@@ -3,6 +3,10 @@ import {reduxForm} from 'redux-form';
 import * as actions from '../../actions';
 
 class Signin extends Component{
+	componentDidMount(){
+		$('body').addClass('page-login layout-full page-dark');
+	}
+
 	handleFormSubmit({email, password}){
 		this.props.signinUser({email, password});
 	}
