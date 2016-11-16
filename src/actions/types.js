@@ -1,6 +1,5 @@
-export const AUTH_USER = 'auth_user';
-export const UNAUTH_USER = 'unauth_user';
-export const AUTH_ERROR = 'auth_error';
+//SHOES
+export const LOAD_LIST_SHOES = 'load_list_shoes';
 
-//THEME
-export const OPEN_BODY_LOGIN = 'open_body_login';
+//SHOE
+export const CLICK_DETAIL_SHOE = 'click_detail_shoe';

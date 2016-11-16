@@ -7,8 +7,6 @@ import reduxThunk from 'redux-thunk';
 
 import App from './components/app';
 import RequireAuth from './hoc/require_auth';
-import Signin from './components/auth/signin';
-import Signout from './components/auth/signout';
 import reducers from './reducers';
 
 import loggerMiddleware from './middlewares/logger';
@@ -22,16 +20,15 @@ if(token){
 	store.dispatch({type: AUTH_USER});
 }
 
-const Feature = () => {
-	return <div>Feature</div>
-}
+import DesignList from './components/design/list';
+import DesignDetail from './components/design/detail';
 
 ReactDOM.render(
   <Provider store={store}>
  	  <Router history={browserHistory}>
   		<Route path="/" component={App}>
-  			<Route path="signin" component={Signin}/>
-  			<Route path="feature" component={RequireAuth(Feature)}/>
+        <Route path="design/list" component={DesignList}/>
+        <Route path="design/detail" component={DesignDetail}/>
   		</Route>
   	</Router>
   </Provider>

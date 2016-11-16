@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import {reducer as form} from 'redux-form';
-import themeReducer from './theme_reducer';
+import shoesReducer from './shoes_reducer';
+import shoeReducer from './shoe_reducer';
 
 const rootReducer = combineReducers({
-	form,
-	theme: themeReducer
+	shoes: shoesReducer,
+	shoe: shoeReducer
 });
 
 export default rootReducer;
