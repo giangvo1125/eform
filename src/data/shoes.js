@@ -1,67 +1,66 @@
 module.exports = [
 	{
 		id: 1,
-		name: "Closed Shoe Peeptoe",
-		style: "closed",
-		strap: "none",
-		toe_type: "peeptoe",
-		heel_types: "stiletto",
-		embel: "noDecor",
-		folder: "shoe-closed-none-peeptoe-stiletto-noDecor",
-		dropdown: {
-			styles: [
-				{name: 'Closed'}
-			]
-		}
+		name: "Mid Heel With Butterfly",
+		style: "c",
+		heel_types: "s",
+		embel: "bb",
+		folder: "c-s-bb"
 	},
 	{
 		id: 2,
-		name: "Closed Shoe",
-		style: "closed",
-		strap: "none",
-		toe_type: "pointed",
-		heel_types: "stiletto",
-		embel: "noDecor",
-		folder: "shoe-closed-none-pointed-stiletto-noDecor"
+		name: "Mid Heel",
+		style: "c",
+		heel_types: "s",
+		embel: "nfd",
+		folder: "c-s-nfd"
 	},
 	{
 		id: 3,
-		name: "Closed Shoe T-bar Peeptoe",
-		style: "closed",
-		strap: "tbar",
-		toe_type: "peeptoe",
-		heel_types: "stiletto",
-		embel: "noDecor",
-		folder: "shoe-closed-tbar-peeptoe-stiletto-noDecor"
+		name: "Mid Heel Wedge Butterfly",
+		style: "c",
+		heel_types: "w",
+		embel: "bb",
+		folder: "c-w-bb"
 	},
 	{
 		id: 4,
-		name: "Closed Shoe T-bar",
-		style: "closed",
-		strap: "tbar",
-		toe_type: "pointed",
-		heel_types: "stiletto",
-		embel: "noDecor",
-		folder: "shoe-closed-tbar-pointed-stiletto-noDecor"
+		name: "Mid Heel Wedge",
+		style: "c",
+		heel_types: "w",
+		embel: "nfd",
+		folder: "c-w-nfd"
 	},
 	{
 		id: 5,
-		name: "Slingback Shoe Peeptoe",
-		style: "slingback",
-		strap: "none",
-		toe_type: "peeptoe",
-		heel_types: "stiletto",
-		embel: "noDecor",
-		folder: "shoe-slingback-none-peeptoe-stiletto-noDecor"
+		name: "Slingback Heel Butterfly",
+		style: "sl",
+		heel_types: "s",
+		embel: "bb",
+		folder: "sl-s-bb"
 	},
 	{
 		id: 6,
-		name: "Slingback Shoe",
-		style: "slingback",
-		strap: "none",
-		toe_type: "pointed",
-		heel_types: "stiletto",
-		embel: "noDecor",
-		folder: "shoe-slingback-none-pointed-stiletto-noDecor"
+		name: "Slingback Heel",
+		style: "sl",
+		heel_types: "s",
+		embel: "nfd",
+		folder: "sl-s-nfd"
+	},
+	{
+		id: 7,
+		name: "Slingback Heel Web Butterfly",
+		style: "sl",
+		heel_types: "w",
+		embel: "bb",
+		folder: "sl-w-bb"
+	},
+	{
+		id: 8,
+		name: "Slingback Heel Wedge",
+		style: "sl",
+		heel_types: "w",
+		embel: "nfd",
+		folder: "sl-w-nfd"
 	}
 ]
