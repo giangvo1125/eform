@@ -21,7 +21,7 @@ class DesignList extends Component{
 					<h1 style={{margin: '0 0 .5em'}}>Choose a style to start designing</h1>
 					{
 						this.props.shoes.map((shoe)=> {
-							let images = `${SERVER_URL}/images/${shoe.folder}/1.jpeg`;
+							let images = `${SERVER_URL}/images/${shoe.folder}/1.jpg`;
 							return (
 								<a className="start-shoe" key={shoe.id} onClick={this._onClickShoe.bind(this, shoe)}>
 									<img width="220" height="260" src={images}/>
