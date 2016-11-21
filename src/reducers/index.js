@@ -1,10 +1,13 @@
 import { combineReducers } from 'redux';
-import shoesReducer from './shoes_reducer';
-import shoeReducer from './shoe_reducer';
+import {reducer as form} from 'redux-form';
+import AppReducer from './app_reducer';
+import ListReducer from './list_reducer';
+import StatusReducer from './status_reducer';
 
 const rootReducer = combineReducers({
-	shoes: shoesReducer,
-	shoe: shoeReducer
+	// app: AppReducer,
+	list: ListReducer,
+	status: StatusReducer,
 });
 
 export default rootReducer;
